@@ -1,4 +1,4 @@
-GroupedTreeWidget is a custom control QT widget.
+<b>GroupedTreeWidget is a custom control QT widget.</b>
 
 What it does?
 - It is a tree widget that groups the data based on the unique values in each column
@@ -10,13 +10,12 @@ What is unique in it?
 - Data can be updated at run-time
 
 How to use it?
-In .ui file
-- Promote the QTreeWidget to GroupedTreeWidget
-- Leave the first column blank and enter the column headers
-
-In code
-- Add data to the control using void OnNewDataAdded(QList<QTreeWidgetItem*> ptrlistItem)
-- Remember that the first column is empty.
+- In .ui file
+	- Promote the QTreeWidget to GroupedTreeWidget
+	- Leave the first column blank and enter the column headers
+- In code
+	- Add data to the control using void OnNewDataAdded(QList\<QTreeWidgetItem*> ptrlistItem)
+	- Remember that the first column is empty.
 
 What are the APIs?
 - Functions:
@@ -31,7 +30,7 @@ What are the APIs?
 - Slots:
 	- void ShowGroupingMenu(QPoint objPoint);
 		Function to show menu when header of tree widget is right clicked
-	- void OnNewDataAdded(QList<QTreeWidgetItem*> ptrlistItem);
+	- void OnNewDataAdded(QList\<QTreeWidgetItem*> ptrlistItem);
 		Function called when data is Added
 	- void OnDataUpdated(QTreeWidgetItem *ptrItem);
 		Function called when data is updated
