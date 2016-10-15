@@ -19,20 +19,19 @@ In code
 - Remember that the first column is empty.
 
 What are the APIs?
-Functions:
-1. void ResetTree();
-	Clears the contents of the tree
-2. void SetCheckable(const bool bIsCheckable = false);
-	To make items checkable
-3. bool IsCheckable() const;
-	To know if item is Checkable
-4. void GroupByValues(const int iColumnNumber);
-	Groups the data as per the unique values in the column selected
-
-Slots:
-1. void ShowGroupingMenu(QPoint objPoint);
-	Function to show menu when header of tree widget is right clicked
-2. void OnNewDataAdded(QList<QTreeWidgetItem*> ptrlistItem);
-	Function called when data is Added
-3. void OnDataUpdated(QTreeWidgetItem *ptrItem);
-	Function called when data is updated
+- Functions:
+	- void ResetTree();
+		Clears the contents of the tree
+	- void SetCheckable(const bool bIsCheckable = false);
+		To make items checkable
+	- bool IsCheckable() const;
+		To know if item is Checkable
+	- void GroupByValues(const int iColumnNumber);
+		Groups the data as per the unique values in the column selected
+- Slots:
+	- void ShowGroupingMenu(QPoint objPoint);
+		Function to show menu when header of tree widget is right clicked
+	- void OnNewDataAdded(QList<QTreeWidgetItem*> ptrlistItem);
+		Function called when data is Added
+	- void OnDataUpdated(QTreeWidgetItem *ptrItem);
+		Function called when data is updated
